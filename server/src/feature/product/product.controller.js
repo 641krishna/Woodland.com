@@ -1,5 +1,5 @@
 const ProductModel = require('./product.model');
-// const {search} = req
+const { search } = require("./product.routes");
 
 const getProducts = async ({
     price,
@@ -10,8 +10,8 @@ const getProducts = async ({
     limit,
     page,
     color,
-    search,
-    section
+    section,
+    search
 }) => {
     try {
         const query = {};
@@ -67,3 +67,21 @@ const getProductByid = async ({ id }) => {
         return { message: error.message };
     }
 };
+
+const deleteProduct = async ({ id }) => {
+    // console.log(id);
+    try {
+        const product = await ProductModel.findByIdAndDelete(id);
+        return {
+            message: "OK",
+            desc: `Product with ID: ${id} deleted successfully`,
+        };
+    } catch (error) {
+        return {
+            message: "ERROR",
+            desc: error.message,
+        };
+    }
+};
+
+module.exports = { getProducts, getProductByid, deleteProduct };
