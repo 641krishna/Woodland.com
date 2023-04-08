@@ -68,6 +68,8 @@ const getProductByid = async ({ id }) => {
     }
 };
 
+
+
 const deleteProduct = async ({ id }) => {
     // console.log(id);
     try {

@@ -1,4 +1,5 @@
 const express = require('express');
+const ProductModel = require('./product.model');
 const {
     getProducts,
     getProductByid,
@@ -57,6 +58,18 @@ productRoute.get("/:id", async (req, res) => {
         return res.status(404).send({ error: error.message });
     }
 });
+
+productRoute.post('/', async (req, res) => {
+    const payload = req.body;
+    // console.log(payload)
+    try {
+        let newProduct = new ProductModel(payload);
+        await newProduct.save();
+        res.status(200).send({ message: 'Added', newProduct });
+    } catch (error) {
+        res.send(error.message);
+    }
+})
 
 productRoute.delete("/:id", async (req, res) => {
     try {
