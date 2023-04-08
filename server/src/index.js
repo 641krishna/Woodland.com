@@ -4,6 +4,7 @@ const connection = require('./config/connection')
 
 const productRoute = require('./feature/product/product.routes');
 const userRoute = require('./feature/users/user.routes');
+const cartRoute = require('./feature/cart/cart.routes');
 
 const app = express();
 
@@ -13,6 +14,7 @@ app.use(cors());
 
 app.use('/product', productRoute);
 app.use('/user', userRoute);
+app.use('/cart', cartRoute);
 
 app.get('/', (req, res) => res.send('hello krishna aluri'))
 

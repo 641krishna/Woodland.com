@@ -1,0 +1,12 @@
+{
+    "message": "Logged In Successfully",
+    "token": 
+    "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0MzE5ZGI1MzE2NDljOTMyNTQ0MzgxYiIsIm5hbWUiOiJzdW5ueSIsInJvbGUiOiJ1c2VyIiwiaWF0IjoxNjgwOTczMjU2LCJleHAiOjE2ODIxODI4NTZ9.2wbn01Zk2JWE1nJ0bWQFOF3bdn1ZZYM__l5ktR7t364",
+    "refreshToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0MzE5ZGI1MzE2NDljOTMyNTQ0MzgxYiIsIm5hbWUiOiJzdW5ueSIsImlhdCI6MTY4MDk3MzI1NiwiZXhwIjoxNjgzMzkyNDU2fQ.stNmnu3aigLOHltSp9B0nnwQJrrV6fwRi1ZW0SYmH3Q",
+    "userDetails": {
+      "id": "64319db531649c932544381b",
+      "name": "sunny",
+      "gender": "name",
+      "role": "user"
+    }
+  }
