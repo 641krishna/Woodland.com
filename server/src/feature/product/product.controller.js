@@ -44,6 +44,7 @@ const getProducts = async ({
             .sort({ [orderBy]: sort === 'asc' ? 1 : sort === 'desc' ? -1 : 0 })
             .limit(+limit)
             .skip((+page - 1) * limit)
+            
 
         return {
             message: 'OK',
