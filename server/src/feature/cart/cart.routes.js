@@ -1,4 +1,7 @@
 const express = require("express");
+
+// const CartModel = require("./cart.model");
+
 const authMiddleware = require("../middlewares/authMiddleware");
 const {
     getCartItems,
@@ -29,6 +32,7 @@ cartRoute.get("/", async (req, res) => {
 });
 
 cartRoute.post("/", async (req, res) => {
+
     const userId = req.userId;
     try {
         const { productId, quantity } = req.body;

@@ -33,8 +33,8 @@ const postCartItem = async ({ productId, userId, quantity }) => {
         const cart = await CartModel.create({ productId, userId, quantity });
 
         const newCartItem = await CartModel.findById(cart._id)
-            .populate("productId")
-            .select("-userId");
+            .populate("productId");
+            
         return {
             message: "OK",
             desc: "Product Added Successfully in cart",
