@@ -1,0 +1,7 @@
+.ReactAutoCompleteCss {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    width: 80%;
+    height: 1.2em;
+    white-space: nowrap;
+  }

@@ -33,6 +33,7 @@ import { authLogout, isAuthCheck, logoutSuccess } from "../Redux/auth/action";
 import { shallowEqual, useDispatch, useSelector } from "react-redux";
 import { useNavigate } from "react-router-dom";
 import { getCart } from "../Redux/cart/action";
+import SearchBar from "./SearchBar";
 
 export default function MainNavbar() {
     const dispatch = useDispatch();
@@ -113,7 +114,7 @@ export default function MainNavbar() {
                         <DesktopNav />
                     </Flex>
                 </Flex>
-                {data.isAuthenticated == true ? (
+                {data.isAuthenticated == false ? (
                     <Stack
                         flex={{ base: 1, md: 0 }}
                         justify={"flex-end"}
@@ -122,10 +123,11 @@ export default function MainNavbar() {
                     >
                         <Button
                             as={"a"}
-                            fontSize={"sm"}
+                            fontSize={"1rem"}
                             fontWeight={500}
                             variant={"link"}
                             onClick={() => navigate("/login")}
+                            color={'gray.600'}
                             cursor="pointer"
                             _hover={{
                                 textDecoration: "none",
@@ -135,17 +137,17 @@ export default function MainNavbar() {
                         </Button>
                         <Button
                             display={{ base: "none", md: "inline-flex" }}
-                            fontSize={"0.8rem"}
+                            fontSize={"0.9rem"}
                             fontWeight={600}
                             color={"white"}
-                            bg={"blue.600"}
+                            bg={"gray.600"}
                             _hover={{
                                 bg: "gray.400",
                             }}
                             onClick={() => navigate("/signup")}
                             size="0"
                             p="0.3rem"
-                            borderRadius="0"
+                            borderRadius="0.3rem"
                         >
                             Sign Up
                         </Button>
@@ -159,9 +161,9 @@ export default function MainNavbar() {
                     >
                         <Button
                             as={"a"}
-                            fontSize="sm"
-                            fontWeight={400}
-                            rightIcon={<RiShoppingCart2Fill fontSize="1rem" />}
+                            fontSize="1rem"
+                            fontWeight={500}
+                            rightIcon={<RiShoppingCart2Fill fontSize={"1rem"} />}
                             variant={"link"}
                             href="/cart"
                             color="#231F20"
@@ -197,7 +199,7 @@ export default function MainNavbar() {
                         </Button>
                         <Button
                             display={{ base: "none", md: "inline-flex" }}
-                            fontSize={"0.8rem"}
+                            fontSize={"1rem"}
                             fontWeight={600}
                             color={"white"}
                             bg={"gray.600"}
@@ -207,7 +209,7 @@ export default function MainNavbar() {
                             onClick={() => handleLogout()}
                             size="0"
                             p="0.3rem"
-                            borderRadius="0"
+                            borderRadius="0.3rem"
                         >
                             Logout
                         </Button>
@@ -215,7 +217,7 @@ export default function MainNavbar() {
                 )}
             </Flex>
             <Box w={["95%", "95%", "85%", "60%"]} margin="auto" h="2rem" my="0.5rem">
-              
+                <SearchBar />
             </Box>
             <Collapse in={isOpen} animateOpacity>
                 <MainCategory />
@@ -235,7 +237,7 @@ const DesktopNav = () => {
     return (
         <Stack direction={"row"} spacing={4} alignItems="center">
             <Link
-                fontSize={["0.4rem", "0.6rem", "0.9rem"]}
+                fontSize={["0.5rem", "0.7rem", "1rem"]}
                 _hover={{
                     textDecoration: "none",
                     color: "red",
@@ -258,8 +260,8 @@ const DesktopNav = () => {
                                     textDecoration: "none",
                                     color: linkHoverColor,
                                 }}
-                                fontSize={["0.4rem", "0.6rem", "0.8rem"]}
-                                fontWeight={['400', '500','600']}
+                                fontSize={["0.5rem", "0.7rem", "1rem"]}
+                                fontWeight={['400', '500', '600']}
                             >
                                 {navItem.label}
                             </Link>
@@ -361,7 +363,7 @@ const MobileNav = ({ data, dispatch }) => {
             bg={useColorModeValue("white", "gray.800")}
             p={4}
             display={{ base: "flex", md: "none", lg: "none" }}
-        
+
         >
             {NavbarDetails.map((navItem) => (
 

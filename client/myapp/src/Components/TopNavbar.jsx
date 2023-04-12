@@ -64,7 +64,7 @@ const TopNavbar = () => {
                 display={{ lg: 'flex', md: 'flex', base: 'none' }}
                 // border='1px solid green'
                 margin='auto'
-                w={['98%', '85%', '98%']}
+                w={['98%', '85%', '100%']}
                 height='3.0rem'
                 bg={useColorModeValue("gray.50", "gray.900")}
                 color={useColorModeValue("gray.700", "gray.200")}
@@ -162,7 +162,7 @@ const MidScreenLogo = () => {
       <>
         <Flex direction="column">
           <Link to="/">
-            <Image mt='-2rem' style={{width:'15rem', height:'8rem'}}
+            <Image mt='-2rem' style={{width:'16rem', height:'8rem'}}
              src="https://www.woodlandworldwide.com/images/h-logo.png" />
           </Link>
           <Text
