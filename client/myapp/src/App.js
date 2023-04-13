@@ -4,6 +4,7 @@ import Home from './Pages/HomePage'
 import AllRoutes from './Routes/AllRoutes';
 import TopNavbar from './Components/TopNavbar';
 import MainNavbar from './Components/MainNavbar';
+import Footer from "./Components/Footer";
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
       <TopNavbar />
       <MainNavbar />
       <AllRoutes />
+      <Footer/>
     </div>
   );
 }
