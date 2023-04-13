@@ -68,6 +68,7 @@ export default function MainNavbar() {
             borderBottom='1.5px solid #DFDFDF'
             borderStyle='solid'
             zIndex='999'
+            bg='white'
         >
             <Flex
                 bg={useColorModeValue("white", "gray.800")}

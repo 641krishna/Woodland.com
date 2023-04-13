@@ -168,3 +168,19 @@ export const deleteProduct = (id) => async (dispatch) => {
         dispatch(deleteProductFailure());
     }
 };
+
+export const getSliderProducts = async (query) => {
+    try {
+      let q = "";
+      for (let key in query) {
+        q += `${key}=${query[key]}&`;
+      }
+      // console.log(q);
+      const res = await axios.get(`http://localhost:8080/product?${q}`);
+      // console.log(res.data.Products)
+  
+      return res; //  for multiple instances of same component
+    } catch (error) {
+      return error;
+    }
+  };

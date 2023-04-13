@@ -156,10 +156,6 @@ export const NavbarDetails = [
                         href: "/product",
                     },
                     {
-                        label: "Tailored Jackets & Blazers",
-                        href: "/product",
-                    },
-                    {
                         label: "Jeans",
                         href: "/product",
                     },
@@ -169,18 +165,6 @@ export const NavbarDetails = [
                     },
                     {
                         label: "Polo shirts",
-                        href: "/product",
-                    },
-                    {
-                        label: "Activewear",
-                        href: "/product",
-                    },
-                    {
-                        label: "Skiwear",
-                        href: "/product",
-                    },
-                    {
-                        label: "Swimwear",
                         href: "/product",
                     },
                     {
