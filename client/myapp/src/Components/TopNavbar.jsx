@@ -20,15 +20,15 @@ const TopNavbar = () => {
     const leftmenu = [
         {
             title: 'MEN',
-            href: '/product?category=Men',
+            href: "/products?category=Men",
         },
         {
             title: 'WOMEN',
-            href: '/product?category=Women',
+            href: '/products?category=Women',
         },
         {
             title: 'BAGS ',
-            href: '/product?category=Bags',
+            href: '/products?category=Bags',
         },
     ];
 
@@ -88,7 +88,7 @@ const TopNavbar = () => {
                             justifyContent="center"
                             display={location == "/" ? "flex" : "none"}
                         >
-                            <Link>
+                            <Link to={el.href}>
                                 <Text
                                     padding='0.5rem'
                                     fontSize={["0.4rem", "0.6rem", "0.9rem"]}
@@ -141,15 +141,15 @@ const TopNavbar = () => {
                 </Box>
             </Box>
             <Flex
-       
-        flex={{ base: 1 }}
-        justifyContent="center"
-        margin="auto"
-        my="1.5rem"
-        display={{ base: "none", md: "flex", lg: "flex" }}
-      >
-        <MidScreenLogo />
-      </Flex>
+
+                flex={{ base: 1 }}
+                justifyContent="center"
+                margin="auto"
+                my="1.5rem"
+                display={{ base: "none", md: "flex", lg: "flex" }}
+            >
+                <MidScreenLogo />
+            </Flex>
         </>
     );
 };
@@ -157,24 +157,24 @@ const TopNavbar = () => {
 export default TopNavbar;
 const MidScreenLogo = () => {
     let head = "Sale – up to 60% off";
-  
+
     return (
-      <>
-        <Flex direction="column">
-          <Link to="/">
-            <Image mt='-2rem' style={{width:'16rem', height:'8rem'}}
-             src="https://www.woodlandworldwide.com/images/h-logo.png" />
-          </Link>
-          <Text
-            className={styles.headline}
-            fontFamily="Poppins"
-            // mt="1rem"
-            color="red"
-            fontSize="0.9rem"
-          >
-            {head}
-          </Text>
-        </Flex>
-      </>
+        <>
+            <Flex direction="column">
+                <Link to="/">
+                    <Image mt='-2rem' style={{ width: '16rem', height: '8rem' }}
+                        src="https://www.woodlandworldwide.com/images/h-logo.png" />
+                </Link>
+                <Text
+                    className={styles.headline}
+                    fontFamily="Poppins"
+                    // mt="1rem"
+                    color="red"
+                    fontSize="0.9rem"
+                >
+                    {head}
+                </Text>
+            </Flex>
+        </>
     );
-  };
+};

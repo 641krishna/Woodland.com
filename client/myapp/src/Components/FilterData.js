@@ -15,17 +15,9 @@ export const filterData = [
                 value: "Women",
             },
             {
-                title: "Unisex",
-                value: "Unisex",
-            },
-            {
-                title: "Boys",
-                value: "Boys",
-            },
-            {
-                title: "Girls",
-                value: "Girls",
-            },
+                title: "Bags & Acces",
+                value: "Bags",
+            }
         ],
     },
     {
@@ -36,89 +28,25 @@ export const filterData = [
                 value: "",
             },
             {
-                title: "Biba",
-                value: "Biba",
+                title: "Woods",
+                value: "Woods",
             },
             {
-                title: "Libas",
-                value: "Libas",
+                title: "Woodland",
+                value: "Woodland",
             },
             {
-                title: "Anouk",
-                value: "Anouk",
+                title: "Woodsports",
+                value: "Woodsports",
             },
             {
-                title: "SPACES",
-                value: "SPACES",
+                title: "Street Wear",
+                value: "Street",
             },
             {
-                title: "Inddus",
-                value: "Inddus",
-            },
-            {
-                title: "SOJANYA",
-                value: "SOJANYA",
-            },
-            {
-                title: "Aj DEZInES",
-                value: "Aj DEZInES",
-            },
-            {
-                title: "Fabindia",
-                value: "Fabindia",
-            },
-            {
-                title: "DEYANN",
-                value: "DEYANN",
-            },
-            {
-                title: "Zotw",
-                value: "Zotw",
-            },
-            {
-                title: "Manu",
-                value: "Manu",
-            },
-            {
-                title: "Svanik",
-                value: "Svanik",
-            },
-            {
-                title: "Global Desi",
-                value: "Global Desi",
-            },
-            {
-                title: "IMARA",
-                value: "IMARA",
-            },
-            {
-                title: "House of Pataudi",
-                value: "House of Pataudi",
-            },
-            {
-                title: "The White Willow",
-                value: "The White Willow",
-            },
-            {
-                title: "AKS",
-                value: "AKS",
-            },
-            {
-                title: "RARE ROOTS",
-                value: "RARE ROOTS",
-            },
-            {
-                title: "I Know",
-                value: "I Know",
-            },
-            {
-                title: "SG YUVRAJ",
-                value: "SG YUVRAJ",
-            },
-            {
-                title: "TABARD",
-                value: "TABARD",
-            },
+                title: "Desi",
+                value: "Desi",
+            }
         ],
     },
     {
@@ -129,88 +57,20 @@ export const filterData = [
                 value: "",
             },
             {
-                title: "Navy",
-                value: "Navy",
-            },
-            {
-                title: "Black",
-                value: "Black",
-            },
-            {
-                title: "White",
-                value: "White",
-            },
-            {
-                title: "Red",
-                value: "Red",
+                title: "Blue",
+                value: "Blue",
             },
             {
                 title: "Green",
                 value: "Green",
             },
             {
-                title: "Sea Green",
-                value: "Sea Green",
+                title: "Khaki",
+                value: "Khaki",
             },
             {
-                title: "Pink",
-                value: "Pink",
-            },
-            {
-                title: "Purple",
-                value: "Purple",
-            },
-            {
-                title: "Maroon",
-                value: "Maroon",
-            },
-            {
-                title: "Yellow",
-                value: "Yellow",
-            },
-            {
-                title: "Beige",
-                value: "Beige",
-            },
-            {
-                title: "Mustard",
-                value: "Mustard",
-            },
-            {
-                title: "Coffee Brown",
-                value: "Coffee Brown",
-            },
-            {
-                title: "Grey",
-                value: "Grey",
-            },
-            {
-                title: "Olive",
-                value: "Olive",
-            },
-            {
-                title: "Blue",
-                value: "Blue",
-            },
-            {
-                title: "Orange",
-                value: "Orange",
-            },
-            {
-                title: "Turquoise Blue",
-                value: "Turquoise Blue",
-            },
-            {
-                title: "Charcoal",
-                value: "Charcoal",
-            },
-            {
-                title: "Brown",
-                value: "Brown",
-            },
-            {
-                title: "Fuchsia",
-                value: "Fuchsia",
+                title: "Other",
+                value: "Other",
             },
         ],
     },

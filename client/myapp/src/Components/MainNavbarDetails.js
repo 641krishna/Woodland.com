@@ -11,39 +11,39 @@ export const NavbarDetails = [
                 subChildren: [
                     {
                         label: "Current Week",
-                        href: "/product",
+                        href: "/products",
                     },
                     {
                         label: "Previous Weeks",
-                        href: "/product",
+                        href: "/products",
                     },
                     {
                         label: "Tailoring Edit",
-                        href: "/product",
+                        href: "/products",
                     },
                     {
                         label: "Outdoor & Activewear",
-                        href: "/product",
+                        href: "/products",
                     },
                     {
                         label: "Cold Weather Edit",
-                        href: "/product",
+                        href: "/products",
                     },
                     {
                         label: "The Ski Edit",
-                        href: "/product",
+                        href: "/products",
                     },
                     {
                         label: "Skiwear",
-                        href: "/product",
+                        href: "/products",
                     },
                     {
                         label: "Swimwear",
-                        href: "/product",
+                        href: "/products",
                     },
                     {
                         label: "Shorts",
-                        href: "/product",
+                        href: "/products",
                     },
                 ],
             },
@@ -53,19 +53,19 @@ export const NavbarDetails = [
                 subChildren: [
                     {
                         label: "Clothing",
-                        href: "/product",
+                        href: "/products",
                     },
                     {
                         label: "Accessories",
-                        href: "/product",
+                        href: "/products",
                     },
                     {
                         label: "New Season",
-                        href: "/product",
+                        href: "/products",
                     },
                     {
                         label: "Winter Clothing",
-                        href: "/product",
+                        href: "/products",
                     },
                 ],
             },
@@ -83,15 +83,15 @@ export const NavbarDetails = [
                 subChildren: [
                     {
                         label: "Woods",
-                        href: "/product?brand=Woods",
+                        href: "/products?brand=Woods",
                     },
                     {
                         label: "Woodland",
-                        href: "/product?brand=Woodland",
+                        href: "/products?brand=Woodland",
                     },
                     {
                         label: "Woodsports",
-                        href: "/product?brand=Woodsports",
+                        href: "/products?brand=Woodsports",
                     }
                 ],
             },
@@ -101,11 +101,11 @@ export const NavbarDetails = [
                 subChildren: [
                     {
                         label: "Street Wear",
-                        href: "/product?brand=Street",
+                        href: "/products?brand=Street",
                     },
                     {
                         label: 'Desi Brand',
-                        href: "/product?brand=Desi"
+                        href: "/products?brand=Desi"
                     }
                 ],
             },
@@ -115,11 +115,11 @@ export const NavbarDetails = [
                 subChildren: [
                     {
                         label: "Current Week",
-                        href: "/product",
+                        href: "/products",
                     },
                     {
                         label: "Previous Weeks",
-                        href: "/product",
+                        href: "/products",
                     }
                 ],
             },
@@ -137,39 +137,39 @@ export const NavbarDetails = [
                 subChildren: [
                     {
                         label: "Jackets",
-                        href: "/product",
+                        href: "/products",
                     },
                     {
                         label: "Shirts",
-                        href: "/product",
+                        href: "/products",
                     },
                     {
                         label: "Knitwear",
-                        href: "/product",
+                        href: "/products",
                     },
                     {
                         label: "Sweats",
-                        href: "/product",
+                        href: "/products",
                     },
                     {
                         label: "Pants",
-                        href: "/product",
+                        href: "/products",
                     },
                     {
                         label: "Jeans",
-                        href: "/product",
+                        href: "/products",
                     },
                     {
                         label: "T-shirts",
-                        href: "/product",
+                        href: "/products",
                     },
                     {
                         label: "Polo shirts",
-                        href: "/product",
+                        href: "/products",
                     },
                     {
                         label: "Shorts",
-                        href: "/product",
+                        href: "/products",
                     },
                 ],
             },
@@ -183,19 +183,19 @@ export const NavbarDetails = [
                     },
                     {
                         label: "Woodland",
-                        href: "/product?brand=Woodland",
+                        href: "/products?brand=Woodland",
                     },
                     {
                         label: "Woodsports",
-                        href: "/product?brand=Woodsports",
+                        href: "/products?brand=Woodsports",
                     },
                     {
                         label: "Street Wear",
-                        href: "/product?brand=Street",
+                        href: "/products?brand=Street",
                     },
                     {
                         label: "Desi",
-                        href: "/product?brand=Desi",
+                        href: "/products?brand=Desi",
                     }
                 ],
             },
@@ -205,15 +205,15 @@ export const NavbarDetails = [
                 subChildren: [
                     {
                         label: "New clothing arrivals",
-                        href: "/product",
+                        href: "/products",
                     },
                     {
                         label: "Essential clothing",
-                        href: "/product",
+                        href: "/products",
                     },
                     {
                         label: "Exclusive clothing",
-                        href: "/product",
+                        href: "/products",
                     },
                 ],
             },
@@ -231,49 +231,32 @@ export const NavbarDetails = [
                 subChildren: [
                     {
                         label: "Vests",
-                        href: "/product?section=vests",
+                        href: "/products?section=vests",
                     },
                     {
                         label: "Belts",
-                        href: "/product?section=belts",
+                        href: "/products?section=belts",
                     },
                     {
                         label: "Socks",
-                        href: "/product?section=socks",
+                        href: "/products?section=socks",
                     },
                     {
                         label: "Mask",
-                        href: "/product?section=mask",
+                        href: "/products?section=mask",
                     },
                     {
                         label: "Swimmimg",
-                        href: "/product?section=swimming",
+                        href: "/products?section=swimming",
                     },
                     {
                         label: "Accessories",
-                        href: "/product?section=Accessories",
+                        href: "/products?section=Accessories",
                     }
 
                 ]
             }
-            // {
-            //     id: 2,
-            //     subLabel: "DISCOVER",
-            //     subChildren: [
-            //         {
-            //             label: "New clothing arrivals",
-            //             href: "/products",
-            //         },
-            //         {
-            //             label: "Essential clothing",
-            //             href: "/products",
-            //         },
-            //         {
-            //             label: "Exclusive clothing",
-            //             href: "/products",
-            //         }
-            //     ]
-            // }
+           
         ]
     }
 
