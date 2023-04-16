@@ -9,6 +9,8 @@ import SingleProductPage from '../Pages/SingleProductPage';
 import MyAccount from '../Pages/MyAccount';
 import AboutMe from '../Pages/AboutMe';
 import ErrorPage from '../Pages/ErrorPage';
+import CheckoutSuccess from '../Components/CheckoutSucces';
+import ResetPassword from '../Components/ResetPassword';
 
 const AllRoutes = () => {
     return (
@@ -29,12 +31,16 @@ const AllRoutes = () => {
                     <CartPage />
                 }>
             </Route>
+
+            <Route path='/resetpassword' element={<ResetPassword />}></Route>
+
             <Route path='/products' element={<ProductsPage />}></Route>
             <Route path='/products/:id' element={<SingleProductPage />}></Route>
 
             <Route path='/account' element={<MyAccount />}></Route>
             <Route path='/aboutme' element={<AboutMe />}></Route>
 
+            <Route path='/checkout-success' element={<CheckoutSuccess />}></Route>
             <Route path='*' element={<ErrorPage />}></Route>
         </Routes>
     )
