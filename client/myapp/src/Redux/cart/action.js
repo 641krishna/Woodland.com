@@ -252,8 +252,9 @@ export const checkoutPayment = (cartItems, id) => async (dispatch) => {
             `http://localhost:8080/checkout/create-checkout-session`,
             body
         );
+        console.log(res.data);
         return dispatch(checkoutSuccess(res.data));
-        // console.log(res.data);
+        
     } catch (error) {
         // console.log(error.response);
         return dispatch(checkoutFailed(error.response));

@@ -19,13 +19,13 @@ const PayButton = ({ cartItems }) => {
     const dispatch = useDispatch();
 
     //   console.log(data.user);
-    //   console.log(cartItems);
+    console.log(cartItems);
 
     const handleCheckOut = () => {
         let id = data.user.id;
         dispatch(checkoutPayment(cartItems, id))
             .then((res) => {
-                // console.log(res.payload.url);
+                console.log(res.payload.url);
                 if (res.payload.url) {
                     window.location.href = res.payload.url;
                 }
@@ -54,4 +54,4 @@ const PayButton = ({ cartItems }) => {
 
 }
 
-export default PayButton
+export default PayButton;
