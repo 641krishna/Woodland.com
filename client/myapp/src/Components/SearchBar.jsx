@@ -38,7 +38,7 @@ const SearchBar = () => {
 
     const handleOnSelect = (item) => {
         // the item selected
-        navigate(`/product/${item._id}`);
+        navigate(`/products/${item._id}`);
         // console.log(item);
     };
     const handleOnHover = (results) => {

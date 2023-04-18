@@ -199,11 +199,11 @@ const ProductSlider = ({ title, query, data }) => {
                         {data.map((el) => (
                             <SimpleGrid
                                 spacing={4}
-                               
+
                                 key={el._id}
                             >
                                 <Card
-                                  
+
                                     w={{ base: "15rem", md: "13rem", lg: "16rem" }}
                                     // w="5rem"
                                     // border="1px red solid"
@@ -215,7 +215,7 @@ const ProductSlider = ({ title, query, data }) => {
                                     <Link to={`/products/${el._id}`}>
                                         <CardBody>
                                             <Image
-                                                src={el.images.split('|')[0]}
+                                                src={el.images.split("|")[0].trim()}
                                                 borderRadius="sm"
                                                 w={{ base: "70%", md: "70%", lg: "70%" }}
                                                 margin="auto"

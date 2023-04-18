@@ -66,7 +66,8 @@ const ProductsPage = () => {
     };
   }, shallowEqual);
 
-  console.log(data)
+  // console.log(data[0].images.split("|")[0]);
+
 
   const dispatch = useDispatch();
 
@@ -220,6 +221,7 @@ const ProductsPage = () => {
                 }}
 
               >
+               
                 {data.map((el) => (
                   <Card
                     w={{ base: "100%", md: "13rem", lg: "16rem" }}
